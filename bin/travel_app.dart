@@ -1,8 +1,7 @@
-import 'services/auth_user.dart';
+import 'models/user.dart';
+import './services/auth_user.dart';
 void main(List<String> arguments) {
-  var user1 = AuthService();
-  var user2 = AuthService();
+  User user1 = User.createUserFromPrompt();
 
-  user1.registerUserFromPrompt();
-  user2.registerUserFromPrompt();
+  User.printUsers();
 }
